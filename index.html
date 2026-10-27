@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="profile_name">Jane Kamau</div>
+
+            <top menu class="nav-links">
+
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+            </top>
+        </nav>
+    </header>
+
+    <main id="home">
+        <!-- About Me Section -->
+        <section id="about" class="section about">
+            <div class="profile">
+                <div class="profile-image">
+                    <img src="images/profile.png" alt="My profile image">
+                </div>
+
+                <div class="about-text">
+                    <h1>Hello, I'm Jane Kamau!</h1>
+                    <p>
+                        I am a passionate learner interested in software
+                        development and creating useful digital experiences.
+                        I enjoy learning new technologies, solving problems,
+                        and building websites that are simple and accessible.
+                    </p>
+                    <a href="#projects" class="btn">Explore My Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2>My Skills</h2>
+
+            <div class="card-container">
+                <article class="card skill-card">
+                    <h3>🌐 HTML5</h3>
+                    <p>Creating structured and accessible web pages.</p>
+                </article>
+
+                <article class="card skill-card">
+                    <h3>🎨 CSS3</h3>
+                    <p>Designing attractive and responsive websites.</p>
+                </article>
+
+                <article class="card skill-card">
+                    <h3>⚙️ JavaScript</h3>
+                    <p>Adding interactivity and dynamic functionality.</p>
+                </article>
+
+                <article class="card skill-card">
+                    <h3>💻 Git & GitHub</h3>
+                    <p>Learning version control and project management.</p>
+                </article>
+                <article class="card skill-card">
+                    <h3>⚛️ React</h3>
+                    <p>Learning to build interactive user interfaces with reusable components.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects">
+            <h2>My Projects</h2>
+
+            <div class="card-container">
+                <article class="card">
+                    <h3>Personal Portfolio</h3>
+                    <p>
+                        A website showcasing my profile, skills,
+                        projects, and recommendations.
+                    </p>
+                    <span class="tag">HTML · CSS · JavaScript</span>
+                </article>
+
+                <article class="card">
+                    <h3>Habit Tracker</h3>
+                    <p>
+                        An interactive application for recording daily
+                        habits and tracking consistency.
+                    </p>
+                    <span class="tag">JavaScript</span>
+                </article>
+
+                <article class="card">
+                    <h3>To-Do List</h3>
+                    <p>
+                        A simple task manager for organizing daily
+                        activities and keeping track of tasks.
+                    </p>
+                    <span class="tag">HTML · CSS · JavaScript</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- Recommendations Section -->
+        <section id="recommendations" class="section">
+            <h2>Recommendations</h2>
+            <p class="section-intro">
+                Kind words and feedback from people who know my work.
+            </p>
+
+            <div id="recommendation-list" class="card-container">
+                <article class="card recommendation-card">
+                    <p>
+                        "A dedicated learner who is eager to develop
+                        new skills and improve every day."
+                    </p>
+                    <h4>— Learning Mentor</h4>
+                </article>
+
+                <article class="card recommendation-card">
+                    <p>
+                        "Shows creativity, curiosity, and a positive
+                        attitude when working on projects."
+                    </p>
+                    <h4>— Project Collaborator</h4>
+                </article>
+
+                <article class="card recommendation-card">
+                    <p>
+                        "Demonstrates a strong willingness to learn
+                        and solve problems through technology."
+                    </p>
+                    <h4>— Peer Recommendation</h4>
+                </article>
+            </div>
+
+            <div class="recommendation-form">
+                <h3>Leave a Recommendation</h3>
+
+                <form id="recommendation-form">
+                    <label for="recommendation-name">Your name</label>
+                    <input type="text" id="recommendation-name" placeholder="Enter your name">
+
+                    <label for="recommendation-text">
+                        Your recommendation
+                    </label>
+                    <textarea id="recommendation-text" rows="4" placeholder="Write your recommendation..."
+                        required></textarea>
+
+                    <button type="submit" class="btn">
+                        Submit Recommendation
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" aria-label="Back to top">↑</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
